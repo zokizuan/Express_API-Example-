@@ -27,4 +27,6 @@ app.get("/", (req, res) => {
 	res.send("Home");
 });
 
-app.listen(3000);
+//port
+const port = process.env.PORT || 3000;
+app.listen(port);
