@@ -29,9 +29,11 @@ app.get("/", (req, res) => {
 	res.send("Home");
 });
 
-//port
+//Listening
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+const HOST = '0.0.0.0';
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
 
 
 // module.exports = app;
